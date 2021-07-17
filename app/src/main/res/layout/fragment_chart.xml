@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/wall"
+             tools:context=".ChartFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="Wykres temperatury"
+    android:textColor="@color/switcher_icon_color"
+    android:layout_marginTop="60dp"/>
+    <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="80dp"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:text="Wykres wilgotności"
+              android:textColor="@color/switcher_icon_color"
+              android:layout_marginTop="300dp"/>
+    <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="320dp"/>
+
+</FrameLayout>

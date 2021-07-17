@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:background="@drawable/wall"
+             android:layout_height="match_parent"
+             tools:context=".TempFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+            android:layout_width="110dp"
+            app:enableProgressAnimation="true"
+            app:textColor="@color/colorPrimaryDark"
+            app:progressColor="@color/colorPrimary"
+            app:dotColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempprogress"
+            android:layout_alignParentEnd="true" android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="36dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="56dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text="Temperature:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView" android:textSize="24sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="76dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/tempprogress" app:layout_constraintHorizontal_bias="0.474"/>
+    <TextView
+            android:text="Humidity:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" android:textSize="24sp"
+            android:layout_marginTop="104dp" app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="36dp"
+            android:textColor="@color/colorPrimaryDark"/>
+    <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:enableProgressAnimation="true"
+            app:textColor="@color/colorPrimaryDark"
+            app:progressColor="@color/colorPrimary"
+            app:dotColor="@color/colorPrimaryDark"
+            android:id="@+id/humiprogress"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/tempprogress" app:layout_constraintStart_toEndOf="@+id/textView3"
+            android:layout_marginStart="8dp" android:layout_marginEnd="56dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"/>
+    <TextView
+            android:text="Last update:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6" android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="340dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/current_time" app:layout_constraintStart_toEndOf="@+id/textView6"
+            android:layout_marginStart="8dp" android:layout_marginTop="340dp" app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/white"/>
+
+
+</android.support.constraint.ConstraintLayout>
